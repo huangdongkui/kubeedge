@@ -176,7 +176,7 @@ func linesFromReader(r io.Reader) ([]string, error) {
 //RunCloudCore starts cloudcore process
 func (cu *KubeCloudInstTool) RunCloudCore() error {
 
-	filetoCopy := fmt.Sprintf("cp %s/kubeedge/cloud/%s %s/", KubeEdgePath, KubeCloudBinaryName, KubeEdgeUsrBinPath)
+	filetoCopy := fmt.Sprintf("cp -r %s/kubeedge/cloud/%s %s/", KubeEdgePath, KubeCloudBinaryName, KubeEdgeUsrBinPath)
 	cmd := &Command{Cmd: exec.Command("sh", "-c", filetoCopy)}
 	err := cmd.ExecuteCmdShowOutput()
 	errout := cmd.GetStdErr()

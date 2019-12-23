@@ -38,8 +38,8 @@ const (
 	DefaultDownloadURL = "https://download.docker.com"
 	DockerPreqReqList  = "apt-transport-https ca-certificates curl gnupg-agent software-properties-common"
 
-	KubernetesDownloadURL = "https://apt.kubernetes.io/"
-	KubernetesGPGURL      = "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+	KubernetesDownloadURL = "https://mirrors.aliyun.com/kubernetes/apt/"
+	KubernetesGPGURL      = "https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg"
 
 	KubeEdgeDownloadURL       = "https://github.com/kubeedge/kubeedge/releases/download"
 	KubeEdgePath              = "/etc/kubeedge/"
